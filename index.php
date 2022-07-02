@@ -1,3 +1,4 @@
+<?php include("path.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,36 +15,15 @@
   <link href="https://fonts.googleapis.com/css?family=Candal|Lora" rel="stylesheet">
 
   <!-- Custom Styling -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
   <title>Blog</title>
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-      <h1 class="logo-text"><span>Awa</span>Inspires</h1>
-    </div>
-    <i class="fa fa-bars menu-toggle"></i>
-    <ul class="nav">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <!-- <li><a href="#">Sign Up</a></li>
-      <li><a href="#">Login</a></li> -->
-      <li>
-        <a href="#">
-          <i class="fa fa-user"></i>
-          Awa Melvine
-          <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
-        </a>
-        <ul>
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#" class="logout">Logout</a></li>
-        </ul>
-      </li>
-    </ul>
-  </header>
+
+  <!-- #TODO INCLOUDE HEADER HERE -->
+  <?php include(ROOT_PATH . "app/includes/header.php"); ?>
 
   <!-- Page Wrapper -->
   <div class="page-wrapper">
@@ -57,7 +37,7 @@
       <div class="post-wrapper">
 
         <div class="post">
-          <img src="images/image_1.png" alt="" class="slider-image">
+          <img src="assets/images/image_1.png" alt="" class="slider-image">
           <div class="post-info">
             <h4><a href="single.html">One day your life will flash before your eyes</a></h4>
             <i class="far fa-user"> Awa Melvine</i>
@@ -67,7 +47,7 @@
         </div>
 
         <div class="post">
-          <img src="images/image_1.png" alt="" class="slider-image">
+          <img src="assets/images/image_1.png" alt="" class="slider-image">
           <div class="post-info">
             <h4><a href="single.html">One day your life will flash before your eyes</a></h4>
             <i class="far fa-user"> Awa Melvine</i>
@@ -77,7 +57,7 @@
         </div>
 
         <div class="post">
-          <img src="images/image_1.png" alt="" class="slider-image">
+          <img src="assets/images/image_1.png" alt="" class="slider-image">
           <div class="post-info">
             <h4><a href="single.html">One day your life will flash before your eyes</a></h4>
             <i class="far fa-user"> Awa Melvine</i>
@@ -87,7 +67,7 @@
         </div>
 
         <div class="post">
-          <img src="images/image_1.png" alt="" class="slider-image">
+          <img src="assets/images/image_1.png" alt="" class="slider-image">
           <div class="post-info">
             <h4><a href="single.html">One day your life will flash before your eyes</a></h4>
             <i class="far fa-user"> Awa Melvine</i>
@@ -97,7 +77,7 @@
         </div>
 
         <div class="post">
-          <img src="images/image_1.png" alt="" class="slider-image">
+          <img src="assets/images/image_1.png" alt="" class="slider-image">
           <div class="post-info">
             <h4><a href="single.html">One day your life will flash before your eyes</a></h4>
             <i class="far fa-user"> Awa Melvine</i>
@@ -120,7 +100,7 @@
         <h1 class="recent-post-title">Recent Posts</h1>
 
         <div class="post clearfix">
-          <img src="images/image_3.png" alt="" class="post-image">
+          <img src="assets/images/image_3.png" alt="" class="post-image">
           <div class="post-preview">
             <h2><a href="single.hmtl">The strongest and sweetest songs yet remain to be sung</a></h2>
             <i class="far fa-user"> Awa Melvine</i>
@@ -135,7 +115,7 @@
         </div>
 
         <div class="post clearfix">
-          <img src="images/image_4.png" alt="" class="post-image">
+          <img src="assets/images/image_4.png" alt="" class="post-image">
           <div class="post-preview">
             <h2><a href="single.hmtl">The strongest and sweetest songs yet remain to be sung</a></h2>
             <i class="far fa-user"> Awa Melvine</i>
@@ -149,7 +129,7 @@
           </div>
         </div>
         <div class="post clearfix">
-          <img src="images/image_3.png" alt="" class="post-image">
+          <img src="assets/images/image_3.png" alt="" class="post-image">
           <div class="post-preview">
             <h2><a href="single.hmtl">The strongest and sweetest songs yet remain to be sung</a></h2>
             <i class="far fa-user"> Awa Melvine</i>
@@ -163,7 +143,7 @@
           </div>
         </div>
         <div class="post clearfix">
-          <img src="images/image_3.png" alt="" class="post-image">
+          <img src="assets/images/image_3.png" alt="" class="post-image">
           <div class="post-preview">
             <h2><a href="single.hmtl">The strongest and sweetest songs yet remain to be sung</a></h2>
             <i class="far fa-user"> Awa Melvine</i>
@@ -211,72 +191,10 @@
   </div>
   <!-- // Page Wrapper -->
 
-  <!-- footer -->
-  <div class="footer">
-    <div class="footer-content">
-
-      <div class="footer-section about">
-        <h1 class="logo-text"><span>Awa</span>Inspires</h1>
-        <p>
-          AwaInspires is a fictional blog conceived for the purpose of a tutorial on YouTube.
-          However, Awa has a blog called pieceofadvice.org where he writes truly inspiring stuff.
-        </p>
-        <div class="contact">
-          <span><i class="fas fa-phone"></i> &nbsp; 123-456-789</span>
-          <span><i class="fas fa-envelope"></i> &nbsp; info@awainspires.com</span>
-        </div>
-        <div class="socials">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-      </div>
-
-      <div class="footer-section links">
-        <h2>Quick Links</h2>
-        <br>
-        <ul>
-          <a href="#">
-            <li>Events</li>
-          </a>
-          <a href="#">
-            <li>Team</li>
-          </a>
-          <a href="#">
-            <li>Mentores</li>
-          </a>
-          <a href="#">
-            <li>Gallery</li>
-          </a>
-          <a href="#">
-            <li>Terms and Conditions</li>
-          </a>
-        </ul>
-      </div>
-
-      <div class="footer-section contact-form">
-        <h2>Contact us</h2>
-        <br>
-        <form action="index.html" method="post">
-          <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
-          <textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
-          <button type="submit" class="btn btn-big contact-btn">
-            <i class="fas fa-envelope"></i>
-            Send
-          </button>
-        </form>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      &copy; codingpoets.com | Designed by Awa Melvine
-    </div>
-  </div>
+  
   <!-- // footer -->
-
-
+  <?php include(ROOT_PATH . "app/includes/footer.php"); ?>
+  
   <!-- JQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -284,7 +202,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <!-- Custom Script -->
-  <script src="js/scripts.js"></script>
+  <script src="assets/js/scripts.js"></script>
 
 </body>
 
